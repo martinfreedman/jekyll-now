@@ -29,7 +29,7 @@ Languages I have coded in either professionally or as a bobby or both:
 
 CTO of Hypezero/OpenAgent. 
 
-All discussions on this stie are personal and do not represent my employer.
+All discussions on this site are personal and do not represent my employer.
 
 ### Contact me
 
