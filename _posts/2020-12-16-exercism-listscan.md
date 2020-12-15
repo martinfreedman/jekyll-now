@@ -23,10 +23,10 @@ modules, this omission by others seemed worthy of a post.
 The Food Chain exercise is one of a number of cumulative song exercises on exercism, another of 
 which is Twelve Days (of Xmas) hence the inspiration for this post.
  
-Note that this has brought forward the launch of this blog so not all features will be ready
+*Note that this has brought forward the launch of this blog so not all features will be ready*
 
 # F# Advent Calendar
-This post is part of the [F# Advnet Calendar](https://sergeytihon.com/2020/10/22/f-advent-calendar-in-english-2020/). Many thanks to Sergy Tihon for including me, his site blog has been a wonderful source to discover all things F# !
+This post is part of the [F# Advent Calendar](https://sergeytihon.com/2020/10/22/f-advent-calendar-in-english-2020/). Many thanks to Sergy Tihon for including me, his site blog has been a wonderful source to discover all things F# !
 
 # Challenges and Exercism
 This post will discuss three cumulative song exercises on the F# Track on Exercism:
