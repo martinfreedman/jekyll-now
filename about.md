@@ -4,12 +4,33 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Languages I have coded in either professionally or as a bobby or both:
+
+- Basic 
+- Fortran
+- x86 Assembler
+- C
+- Parallel C
+- Smartware(!) 
+- Lisp
+- Prolog
+- APL
+- C++
+- Delphi
+- S Plus
+- Matlab
+- Python 
+- Javascript
+- J
+- C#
+- F#
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+CTO of Hypezero/OpenAgent. 
+
+All discussions on this stie are personal and do not represent my employer.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[spam filtered email address](mailto:martnifreedman@gmail.com)
