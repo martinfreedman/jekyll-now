@@ -89,7 +89,7 @@ I think this implies the use of scan but most seemed to read it otherwise.
 
 This is currently the most starred solution by [jovanecyk](https://exercism.io/tracks/fsharp/exercises/house/solutions/d5150ea1f5564c0cb43e9b89b46e4971)
 
-```fsharp
+```
 let sentences =
     [
         "the house that Jack built"
