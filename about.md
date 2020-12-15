@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Languages I have coded in either professionally or as a bobby or both:
+Languages I have coded in either professionally or as a hobby or both:
 
 - Basic 
 - Fortran
