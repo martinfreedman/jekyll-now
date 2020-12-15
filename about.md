@@ -33,4 +33,4 @@ All discussions on this stie are personal and do not represent my employer.
 
 ### Contact me
 
-[spam filtered email address](mailto:martnifreedman@gmail.com)
+[spam filtered email address](mailto:martinfreedman@gmail.com)
