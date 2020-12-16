@@ -25,6 +25,10 @@ which is Twelve Days (of Xmas) hence the inspiration for this post.
  
 *Note that this has brought forward the launch of this blog so not all features will be ready*
 
+**Addition:** Have a strange double scrollbar effect on code blocks that I have spent much time upon. I
+had expected by this launch to have sorted out a theme and comments but these have been delayed as a result
+of this issue, sorry.*
+
 # F# Advent Calendar
 This post is part of the [F# Advent Calendar](https://sergeytihon.com/2020/10/22/f-advent-calendar-in-english-2020/). Many thanks to Sergy Tihon for including me, his site blog has been a wonderful source to discover all things F# !
 
