@@ -27,7 +27,7 @@ which is Twelve Days (of Xmas) hence the inspiration for this post.
 
 **Addition:** Have a strange double scrollbar effect on code blocks that I have spent much time upon. I
 had expected by this launch to have sorted out a theme and comments but these have been delayed as a result
-of this issue, sorry.*
+of this issue, sorry.
 
 # F# Advent Calendar
 This post is part of the [F# Advent Calendar](https://sergeytihon.com/2020/10/22/f-advent-calendar-in-english-2020/). Many thanks to Sergy Tihon for including me, his site blog has been a wonderful source to discover all things F# !
@@ -84,7 +84,8 @@ From the [House](https://exercism.io/tracks/fsharp/exercises/house/solutions) in
 > Recite the nursery rhyme 'This is the House that Jack Built'.
 > 
 >> [The] process of placing a phrase of clause within another phrase of clause is called embedding. It is through the processes of recursion and embedding that we are able to take a finite number of forms (words and phrases) and construct an infinite number of expressions. Furthermore, embedding also allows us to construct an infinitely long structure, in theory anyway.
->> First I will present a decent solution to this which does not use *scan* then we will see how *scan* can help
+
+First I will present a decent solution to this which does not use *scan* then we will see how *scan* can help
 
 (Select the instructions tab within any selected solution for more information, and that 
 is the same for the following challenges)
@@ -93,7 +94,7 @@ I think this implies the use of scan but most seemed to read it otherwise.
 
 This is currently the most starred solution by [jovanecyk](https://exercism.io/tracks/fsharp/exercises/house/solutions/d5150ea1f5564c0cb43e9b89b46e4971)
 
-```
+```fsharp
 let sentences =
     [
         "the house that Jack built"
@@ -127,6 +128,8 @@ let rhyme =
     |> List.map (sprintf "This is %s.")
     |> String.concat "\n\n"
 ```
+This is a decent soltion. 
+
 This is quite a simple challenge, as this song is highly regular and this is a typical, decent *List.map* 
 solution albeit calling a recursive function rather than a *fold* (it can easily be turned into a *fold*)
 So how can *List.scan* help?
@@ -378,10 +381,10 @@ On the other hand I also come from the function-level school of programming from
 
 Maybe exercism needs to have a challenge/exercise level comment section where such equivalent insights
 can be raised and discussed, rather than only having individual solution commenting. Going to the github is one step too far as it
-takes one out of the user facing web site. I will look and see if there are feature requests or PR's for v3 which will
+takes one out of the user facing web site? I will look and see if there are feature requests or PR's for v3 which will
 come out shortly.
 
-Anyway it might be useful to revisit some of my C# solutions and take what I have learnt on this track, to see how it might improve those solutions. Redoing this one
+Anyway it might also be useful to revisit some of my C# solutions and take what I have learnt on this track, to see how it might improve those solutions. Redoing this one
  will also enable  one to see how pattern matching has progressed with C# 8 but that is for another time.
 
 Happy Holidays!
