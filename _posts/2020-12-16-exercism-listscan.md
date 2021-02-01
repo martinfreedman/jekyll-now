@@ -136,6 +136,7 @@ solution albeit calling a recursive function rather than a *fold* (it can easily
 So how can *List.scan* help?
 
 [My solution:](https://exercism.io/tracks/fsharp/exercises/house/solutions/10d67ba62d0e478f85a571ad602f208c)
+
 ```fsharp
 let recite startVerse endVerse: string list =    
     let verses =
@@ -159,8 +160,8 @@ let recite startVerse endVerse: string list =
     |> List.scan scanner (prefix :: [verses.[0]] )
     |> List.skip (startVerse - 1)
     |> List.map System.String.Concat
-
 ```
+
 In this case the initial value of the accumulator is the actual start of the output, in the following 
 two challenges this is thrown away, so there are no start and stop offsets in the following. It is very regular 
 with only a difference in the first verse which is handled by the initialised accumulator. There is no
@@ -217,6 +218,7 @@ let recite start stop =
     
     [start .. stop] |> List.map verse
 ```
+
 This is a clearer example of the *map-fold* pattern I have referred to already. It is quite straightforward to convert this to *scan* and I think there is a useful before and after comparison.
 
 We need, in this case, to convert the built strings into lists that can be cons'd and decapitated 
@@ -229,21 +231,22 @@ which now calls *scanner* rather than a *map*. Since there is no *scan2* functio
  needs to be passed as a tuple rather than two separate arguments
 
 This is the relevant extract from my [current solution:](https://exercism.io/tracks/fsharp/exercises/twelve-days/solutions/ad58eb715c774ffbb2b31ebca90cc08a)
+
 ```fsharp
-    let scanner = fun (acc,i) curr -> 
-        match i, acc with
-        | 1 , _         -> curr :: acc  
-        | 2 , _ :: tail -> sprintf "%s, and " curr :: tail
-        | _ , _ :: tail -> sprintf "%s, " curr :: tail
-        |> fun v -> sprintf "On the %s day of Christmas my true love gave to me: " nth.[i - 1] :: v
-        |> fun v -> (v, i + 1)
+let scanner = fun (acc,i) curr -> 
+     match i, acc with
+     | 1 , _         -> curr :: acc  
+     | 2 , _ :: tail -> sprintf "%s, and " curr :: tail
+     | _ , _ :: tail -> sprintf "%s, " curr :: tail
+     |> fun v -> sprintf "On the %s day of Christmas my true love gave to me: " nth.[i - 1] :: v
+     |> fun v -> (v, i + 1)
          
-    days
-    |> List.take stop
-    |> List.scan scanner ([], 1)
-    |> List.skip start
-    |> List.map fst
-    |> List.map System.String.Concat
+days
+|> List.take stop
+|> List.scan scanner ([], 1)
+|> List.skip start
+|> List.map fst
+|> List.map System.String.Concat
 ```
 
 I think this solution is not only both more performant and memory efficient but also clearer.  All conditional 
@@ -390,7 +393,7 @@ Anyway it might also be useful to revisit some of my C# solutions and take what 
 
 Happy Holidays!
 
-```<language>
+```
 >twelvedays recite 1 12
 On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.
 On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.
