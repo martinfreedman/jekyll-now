@@ -14,7 +14,7 @@ avatar: https://raw.githubusercontent.com/martinfreedman/martinfreedman/master/i
 #
 # Flags below are optional
 #
-theme: jekyll-theme-hacker
+theme: jekyll-theme-midnight
 
 # Includes an icon in the footer for each username you enter
 footer-links:
